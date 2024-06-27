@@ -1,0 +1,52 @@
+@import "../../styles/@mixins"
+
+.section
+    width: 100%
+    min-height: 265px
+    background-color: #512689
+    display: flex
+
+.wrapper
+    max-width: 1440px
+    width: 100%
+    margin: 0 auto
+    display: flex
+    position: relative
+    align-items: center
+    padding: 0 80px
+
+.btn
+    color: #F8F8F8
+    border: 1px solid #F8F8F8
+    border-radius: 8px
+    width: 81px
+    height: 38px
+    position: absolute
+    right: 80px
+    top: 32px
+    @include btn-title
+    transition: 0.3s
+
+.btn:hover
+    scale: 1.03
+
+.btnTablet
+    width: 18px
+    height: 18px
+    background-image: url('../../assets/icons/exit-mobile.svg')
+    transition: 0.3s
+    position: absolute
+    right: 80px
+    top: 23px
+    background-repeat: no-repeat
+
+.btnTablet:hover
+    scale: 1.03
+
+@media screen and (max-width: 550px)
+    .wrapper
+        padding: 0 16px
+
+    .btnTablet
+        right: 27px
+

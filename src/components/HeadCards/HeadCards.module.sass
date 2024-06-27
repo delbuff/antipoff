@@ -1,0 +1,28 @@
+@import "../../styles/@mixins"
+
+.headCards
+    display: flex
+    flex-direction: column
+    gap: 16px
+    max-width: 846px
+    width: 100%
+    align-items: center
+    margin: 0 auto
+
+.title
+    color: #FFFFFF
+    @include heading-h1
+
+.subtitle
+    color: #FFFFFF
+    @include heading-h2
+    text-align: center
+
+@media screen and (max-width: 900px)
+    .title
+        font-size: 36px
+        line-height: 42px
+
+    .subtitle
+        font-size: 16px
+        line-height: 19px
